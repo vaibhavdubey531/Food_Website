@@ -40,8 +40,9 @@
 /* Contact Us Section */
 .contact-box .form-group input,
 .contact-box .form-group textarea {
-    width: 500px;
+    width: 80%;
     height: 30px;
+    align-self: center;
 }
 
 /* Footer Section */
