@@ -1,0 +1,232 @@
+/* CSS reset */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* Body */
+html{
+    scroll-behavior: smooth;
+}
+/* Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    width: 100vw;
+    position: sticky;
+    top: 0px;
+}
+
+/* Not able to understand kya hua yahan */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* navbar image styling */
+#navbar div{
+    margin: 5px 25px;
+}
+
+#navbar #logo img{
+    height: 60px;
+    margin: 5px 5px;
+    /* border-radius: 50%; */
+}
+
+#navbar #logo img:hover{
+    box-shadow: 2px 4px 2px green;
+    /* border-radius: 50%; */
+}
+
+/* navbar list styling */
+#navbar ul{
+    display: flex;
+    
+}
+
+#navbar ul li{
+    margin: 5px 7px;
+    list-style: none;
+    
+}
+
+#navbar ul li a{
+    display: block;
+    /* font-family: "Baloo Bhaijaan 2", sans-serif; */
+    color: blue;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: 2px 2px;
+    padding: 0px 10px;
+}
+
+#navbar ul li a:hover{
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+}
+
+
+/* Section Home */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 200px;
+    text-align: center;
+    height: 500px;
+    color: rgb(13, 9, 9);
+    /* margin: 10px; */
+    /* font-family: "Baloo Bhaijaan 2", sans-serif; */
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    background:url("https://images.pexels.com/photos/1435895/pexels-photo-1435895.jpeg") no-repeat center center/cover;
+    /* background:url("images\foodbg.jpeg") no-repeat center center/cover; */
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1{
+    font-family: "Bree Serif", serif;
+    text-shadow: 2px 2px green;
+}
+
+#home p{
+    font-family: "Bree Serif", serif;
+    text-shadow: 1px 1px green;
+}
+
+/* Services section */
+.services{
+    display: flex;
+}
+
+.services .food_items{
+    border: 2px solid brown;
+    border-radius: 23px;
+    background-color: rgb(240, 233, 233);
+    padding: 25px;
+    margin: 10px;
+}
+
+.services .food_items img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+ /* clients section */
+
+ #clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .client-items{
+    padding: 30px;
+    /* box-sizing: border-box; */
+ }
+ .client-items img{
+    height: 100px;
+
+ }
+
+ #clientale::before{
+    content: "";
+    position: absolute;
+    background:url("https://images.pexels.com/photos/1415734/pexels-photo-1415734.jpeg") no-repeat center center/cover;
+    height: 40%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+ }
+
+/* Contact Section */
+
+#contact-section{
+    height: 350px;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* to make items in straight line */
+.contact-box .form-group input, .contact-box .form-group textarea{
+    display: flex;
+    /* align-items: center; */
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 200px;
+    /* height: 30px; */
+}
+
+.contact-box .form-group label{
+    font-size: 1.3rem;
+    font-family: "Bree Serif", serif;
+}
+
+#contact-section::before{
+    content: "";
+    position: absolute;
+    height: 350px;
+    width: 100%;
+    background: url("https://media.istockphoto.com/id/473074456/photo/a-woman-using-a-landline-phone.jpg?s=1024x1024&w=is&k=20&c=jRV9XCMVFtTRE4jdQd0WXdPRc7qIaAJFiiOZMf28DuU=") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* Footer */
+footer #copyright{
+    font-family: "Bree Serif", serif;
+    background-color: rgba(0,0,0,0.7);
+    margin: 10px 0px;
+    color: white;
+}
+/* Utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: "Bree Serif", serif;
+    /* font-family: "Bree Serif", serif;
+    text-shadow: 2px 2px green; */
+}
+
+.h-secondary{
+    font-family: "Bree Serif", serif;
+    font-size: 2.0rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+
+.btn{
+    margin: 15px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid white;
+    font-size: 1.1rem;
+    /* font-weight: bold; */
+    cursor: pointer;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-weight: bold;
+    background-color: brown;
+}
